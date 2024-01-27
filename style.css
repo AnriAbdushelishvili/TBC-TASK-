@@ -1,0 +1,860 @@
+*{
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #1a1e1f;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+}
+/*      HEADING,NAVBAR,A HREF           */
+.navbar {
+    overflow: hidden;
+    background-color: #1a1e1f;  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  #LinksHome{
+    position: relative;
+    right: -62rem;
+  }
+  .navbar a {
+    float: left;
+    margin-right: 2rem;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 38px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: bold;
+    transition: color 0.4s ease;
+  }
+  a:hover{
+    color:#0797e0;
+  }
+ 
+   .navbar a.icon{
+    display: none;
+  }
+.TBC-X-UCAID{
+  position: fixed;
+  left: 27rem;
+  top: 1.5rem;
+  z-index: 99;
+}
+  
+  @media screen and (max-width: 768px) {
+   
+    .navbar a:not(:first-child) {display: none;}  
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .navbar a.hiddenToggle{
+      display: none;
+      position: relative;
+      left: 1rem;
+      top:40px;
+    }
+   .navbar{
+    width: 100vw;
+   }
+  }
+  @media screen and (max-width: 768px) {
+   
+    .navbar.responsive .icon {
+      position: relative;
+      top:-190px;
+    }
+    .navbar.responsive a {
+      padding: 14px 15px;
+      float: none;
+      display: block;
+      text-align: right;
+      z-index: 2;
+    }
+  .shownToggle{
+    position: relative;
+    left: 1rem;
+    top:40px;
+    display: block;
+    text-align: center;
+  }
+  
+  }
+  @media screen and (max-width: 768px) {
+  
+    .TBC-X-UCAID{
+      position: fixed;
+      bottom:1%;
+      left:1%;
+      width: 60%;
+    }    
+  }
+
+  .navbar.responsive.active a {
+    padding: 14px 16px; /* Adjust the padding as needed */
+  }
+  img{
+    position: relative;
+    top: 20px;
+    max-width: 242px;
+    max-height: 60px;
+    z-index: 1;
+  }
+ /*      HEADING,NAVBAR,A HREF           */
+ /*         ---------------             MAIN            -----------               */
+ /*                      MAIN MENU                          */
+ .Main-Photo{
+  background-image:url(https://static.wixstatic.com/media/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg/v1/fill/w_1903,h_352,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg);
+  background-color: gray; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-position-y: 96px;
+  width: 100%;
+  height: 427px;
+  z-index: 1;
+ }
+ @media screen and (max-width: 768px) {
+ 
+  .Main-Photo{
+    background-image:url(https://static.wixstatic.com/media/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg/v1/fill/w_619,h_420,al_c,q_80,enc_auto/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 80px;
+    width: 100%;
+    height: 323px;
+   }
+ }
+ .h1-description{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 42px;
+  color:white;
+  position: relative;    
+  bottom: 232px; 
+  left: 500px;   
+  right: 30px;
+}
+@media screen and (max-width: 768px) {
+
+  .h1-description{
+    position: relative;
+    font-size: 30px;
+    text-align: start;
+    left:0%;
+    bottom: 180px;
+    z-index: 1;
+    
+    
+  }
+}
+  /*                      MAIN MENU                          */
+  /*                      MAIN TEXT                          */
+  .Main-Text{
+    position: relative;
+    bottom: 120px;
+    background-color:#2b2b2b;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+  }
+  .Text{
+    color: white;
+    font-size: 32px;
+    width: 1000px;
+    word-break: keep-all;
+    position: relative;
+    left: 26%;
+    top: 20%;
+  }
+  .bttxt{
+    position: relative;
+    left: 26%;
+    top: 30%;
+    color:#0797e0;
+    font-size: 20px;
+    font-weight: 900;
+    background-color:#2b2b2b;
+    transition: color 0.4s ease;
+  }
+  .bttxt:hover{
+    cursor:pointer;
+    color:gray;
+  }
+  @media screen and (max-width: 768px) {
+  
+    .Text{
+      font-size: 19px;
+      width: 330px;
+      word-break: keep-all;
+      position: relative;
+      left: 6%;
+      top: 6%;
+    }
+    .bttxt{
+      position: relative;
+      left: 6%;
+      top: 14%;
+      font-weight: 800;
+    }
+  }
+   /*                      MAIN TEXT                          */
+   /*                     MAIN სასწავლო კურსები                          */
+   .Main-saswavlokursebi{
+    position: relative;
+    bottom:130px;
+    width:100%;
+    height:1500px;
+    background-color:#151515;
+   }
+   .Text1{
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 400px;
+    left: 486%;
+    bottom: 876%;
+   }
+   .block1{
+    border-color: #2b2b2b;
+    border-radius: 6px;
+    background-color: #0797e0;
+  
+   }
+   .Main-saswavlokursebi {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px); 
+    gap: 350px; 
+  }
+  .block1 {
+    position: relative;
+    left: 490%;
+    top: 180%;
+    width: 300px;
+    height: 400px;
+    background-color: #151515; 
+    border: 2px solid #2b2b2b; 
+    box-sizing: border-box;
+  }
+  .block1:nth-child(1) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_6f93a2a737b14a32ae26b17f51e6dbf1~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_6f93a2a737b14a32ae26b17f51e6dbf1~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(2) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_4323db1079614633a653e2ff9a95738e~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_4323db1079614633a653e2ff9a95738e~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(3) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_5487da3fc590472dbb3599f7575df2d1~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_5487da3fc590472dbb3599f7575df2d1~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(4) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_d9e4b267142542e98dbcdf183d766651~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_d9e4b267142542e98dbcdf183d766651~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(5) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_41969c5f1e6b4a269bf1d790a52e465b~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_41969c5f1e6b4a269bf1d790a52e465b~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(6) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_dd355dc915d14264afd4ce2a9d2b0e12~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_dd355dc915d14264afd4ce2a9d2b0e12~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(7) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_0fc678e4e2e04f8dacc747a4e2fbb6e6~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_0fc678e4e2e04f8dacc747a4e2fbb6e6~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(8) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_dda966974c014319bd5623526510b47c~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_dda966974c014319bd5623526510b47c~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  .block1:nth-child(9) {
+    background-image: url(https://static.wixstatic.com/media/dd97f4_8cc30cf0258d45a6ad2298ebec33550a~mv2.jpg/v1/fill/w_300,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_8cc30cf0258d45a6ad2298ebec33550a~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: block;
+   
+  }
+  /* agweriloba ^_^  */
+  .agweriloba1{
+    position: relative;
+    left: 5%;
+    top: 50%;
+  }
+   .agweriloba1button{
+    position: relative;
+    left: 5%;
+    top: 60%;
+    color:#0797e0;
+    font-size: 18px;
+    font-weight: 400;
+    background-color:#151515;
+    cursor: pointer;
+  }
+  /* agweriloba ^_^  */
+   @media screen and (max-width: 768px) {
+   
+    .Text1{
+    font-size: 24px;
+    word-spacing: 2px;
+    position: relative;
+      left: 20%;
+      bottom: 3290px;
+    }
+   }
+
+ @media screen and (max-width: 768px) {
+  
+  .Main-saswavlokursebi {
+    display: grid;
+    grid-template-columns: repeat(1, 300px); 
+    grid-template-rows: repeat(9, 350px);
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 3480px;
+  }
+
+  .block1 {
+    position: relative;
+    left: 10%;
+    top: 30%;
+    width: 100%;
+    height: auto;
+  
+  }
+ }
+/*                     MAIN სასწავლო კურსები                          */
+ /*                     MAIN პროექტის პარტნიორები                          */
+.partniorebi{
+  position: relative;
+  bottom: 130px;
+  background-color: #1a1e1f;
+  width: 100%;
+  height: 300px;
+}
+.slider{
+  width: 1500px;
+  height: 150px;
+  overflow: hidden;
+  
+}
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+  
+}
+.slides input{
+  display: none;
+}
+.slide{
+  position: relative;
+  left: 10.5%;
+  top: 14%;
+  width: 20%;
+  transition: 2s;
+}
+.slide img{
+  width: 600px;
+  height: 400px;
+}
+.navigation-manual{
+  position: absolute;
+  left: 45%;
+  top: 48%;
+  width: 800px;
+  margin-top: 40px;
+  display: flex;
+}
+.manual-btn{
+  border:2px solid #0797e0;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background:#0797e0;
+}
+#radio1:checked ~ .first{
+  margin-left: 0%;
+}
+#radio2:checked ~ .first{
+  margin-left: -23%;
+}
+#radio3:checked ~ .first{
+  margin-left: -43%;
+}
+.navigation-auto{
+  position: absolute;
+}
+.navigation-auto div{
+  border: 2px solid #0797e0;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto{
+  position: absolute;
+  left: 45%;
+  top: 48%;
+  width: 800px;
+  margin-top: 40px;
+  display: flex;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #0797e0;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #0797e0;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #0797e0;
+}
+
+@media screen and (max-width: 768px) {
+  .partniorebi{
+    position: relative;
+    bottom: 130px;
+    background-color: #1a1e1f;
+    width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .slider{
+    width: 1500px;
+    height: 150px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  .slides input{
+    display: none;
+  }
+  #ufcc{
+    position: relative;
+    right: 8%;
+    top: 5%;
+  }
+  .slide{
+    position: relative;
+    left: 3.5%;
+    top: 10%;
+    width: 20%;
+    transition: 2s;
+  }
+  .slide img{
+    width: 7% ;
+    height: 7%;
+  }
+  .navigation-manual{
+    position: absolute;
+    left: 32%;
+    top: 50%;
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+  }
+  .manual-btn{
+    border:2px solid #0797e0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  .manual-btn:hover{
+    background:#0797e0;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0%;
+  }
+  #radio2:checked ~ .first{
+    margin-left: -23%;
+  }
+  #radio3:checked ~ .first{
+    margin-left: -43%;
+  }
+  .navigation-auto{
+    position: absolute;
+  }
+  .navigation-auto div{
+    border: 2px solid #0797e0;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .navigation-auto{
+    position: absolute;
+    left: 32%;
+    top: 50%;
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+  }
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #0797e0;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #0797e0;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #0797e0;
+  }
+}
+ /*                     MAIN პროექტის პარტნიორები                          */
+ /*                     MAIN ხშირად დასმული შეკითხვები                          */
+ h4 , h5{
+  color: #0797e0;
+  font-weight: 300;
+ }
+ .yvela{
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 54% ;
+  left: 55%;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0797e0;
+  background-color: #151515;
+  width: 200px;
+  height: 100px;
+ }
+ .xshiradDasmuliShekitxvebi{
+  position: relative;
+  bottom: 130px;
+  background-color: #151515;
+  width: 100%;
+  height: 500px;
+ }
+ .kitxvebi{
+  position: relative;
+  top: 10%;
+  left: 25.5%;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+ }
+.dropdown {
+  width: 45rem;
+  position: relative;
+  top: 16%;
+  left: 23%;
+  margin: 2rem;
+}
+.dropdown *{
+  box-sizing: border-box;
+}
+.select{
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:#0797e0 ;
+  border-radius: 0.5rem;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.select-clicked{
+  border: 2px #0797e0 solid;
+  box-shadow: 0 0 0.8em #0797e0;
+}
+
+.caret{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #0797e0;
+  transition: 0.3s;
+}
+.caret-rotate{
+  transform: rotate(180deg);
+}
+.menu{
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #323741;
+  border: 1px #363a43 solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  position: absolute;
+  top: 3em;
+  width: 100%;
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 999;
+}
+.menu li{
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.menu-open{
+  display: block;
+  opacity: 1;
+}
+@media screen and (max-width: 768px){
+  .xshiradDasmuliShekitxvebi{
+    position: relative;
+    bottom: 130px;
+    background-color: #151515;
+    width: 100%;
+    height: 1410px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   }
+   .kitxvebi{
+    position: relative;
+    top: 10%;
+    left: 4%;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+   }
+  .dropdown {
+    width: 20rem;
+    position: relative;
+    top: 10%;
+    left: -5%;
+    margin: 2rem;
+  }
+  .dropdown *{
+    box-sizing: border-box;
+  }
+  .select{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:#0797e0 ;
+    border-radius: 0.5rem;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .select-clicked{
+    border: 2px #0797e0 solid;
+    box-shadow: 0 0 0.8em #0797e0;
+  }
+  
+  .caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #0797e0;
+    transition: 0.3s;
+  }
+  .caret-rotate{
+    transform: rotate(180deg);
+  }
+  .menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 999;
+  }
+  .menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  .menu-open{
+    display: block;
+    opacity: 1;
+  }
+}
+ /*                     MAIN ხშირად დასმული შეკითხვები                         */
+ /*                     Footer                         */
+ footer{
+  background-color: #1a1e1f;
+  position: relative;
+  bottom: 150px;
+  width: 100%;
+  height: 100px;
+ }
+ .tbclogo{
+  position: relative;
+  top: 80%;
+  left:24.6%;
+ 
+ }
+ h6{
+  color: white;
+  position: relative;
+  top: 100%;
+  left:24.6%;
+  font-size: 16px;
+  font-weight: 20;
+ }
+ .hh6{
+  color: white;
+  position: relative;
+  top: 120%;
+  left:24.6%;
+  font-size: 14px;
+  font-weight: 20;
+ }
+ .facebooklogoo{
+  position: relative;
+  top: 20%;
+  left: 71%;
+ }
+ .youtubelogoo{
+  position: relative;
+  top: 20%;
+  left: 72%;
+ }
+ .mogvweret{
+  position: relative;
+  font-size: 18px;
+  font-weight: 200;
+  top: 70%;
+  left: 66%;
+  width: 120px;
+  height: 40px;
+  background-color: #0797e0;
+  border: 2px solid #0797e0;
+  color: white;
+ }
+ @media screen and (max-width: 768px){
+  .bolo{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  footer{
+    background-color: #1a1e1f;
+    position: relative;
+    bottom: 750px;
+    width: 100%;
+    height: 620px;
+   }
+   .tbclogo{
+    position: relative;
+    top: 40%;
+    left: 28%;
+    width: 90px;
+    height: 30px;
+   }
+   h6{
+    color: white;
+    position: relative;
+    top: 60%;
+    left:16%;
+    font-size: 16px;
+    font-weight: 20;
+   }
+   .hh6{
+    color: white;
+    position: relative;
+    top: 70%;
+    left: 30%;
+    font-size: 14px;
+    font-weight: 20;
+   }
+   .facebooklogoo{
+    position: relative;
+    top: 30%;
+    left: 70%;
+   }
+   .youtubelogoo{
+    position: relative;
+    top: 30%;
+    left: 72%;
+   }
+ }
+ .mogvweret{
+  position: relative;
+  font-size: 18px;
+  font-weight: 200;
+  top: 36%;
+  left: 1%;
+  width: 120px;
+  height: 40px;
+  background-color: #0797e0;
+  border: 2px solid #0797e0;
+  color: white;
+ }
+  /*                     Footer                         */
+ /*         ---------------             MAIN            -----------               */
