@@ -843,18 +843,18 @@ a{
     top: 30%;
     left: 72%;
    }
- }
- .mogvweret{
-  position: relative;
-  font-size: 18px;
-  font-weight: 200;
-  top: 36%;
-  left: 1%;
-  width: 120px;
-  height: 40px;
-  background-color: #0797e0;
-  border: 2px solid #0797e0;
-  color: white;
+   .mogvweret{
+    position: relative;
+    font-size: 18px;
+    font-weight: 200;
+    top: 36%;
+    left: 1%;
+    width: 120px;
+    height: 40px;
+    background-color: #0797e0;
+    border: 2px solid #0797e0;
+    color: white;
+   }
  }
   /*                     Footer                         */
  /*         ---------------             MAIN            -----------               */
